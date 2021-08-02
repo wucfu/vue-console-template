@@ -32,7 +32,7 @@ module.exports = {
     },
     proxy: {
       '/console-template': {
-        // target: 'http://localhost:9528',
+        target: 'http://localhost:9528',
         changeOrigin: true
       }
     }

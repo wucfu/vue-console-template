@@ -35,7 +35,7 @@ module.exports = [
       // mock error
       if (!token) {
         return {
-          code: 60204,
+          code: 'failed',
           message: 'Account and password are incorrect.'
         }
       }
@@ -144,9 +144,9 @@ module.exports = [
             {
               'path': '/demo2',
               'component': 'demo/demo2/index',
-              'name': '示例1',
+              'name': '示例2',
               'meta': {
-                'title': '示例1',
+                'title': '示例2',
                 'icon': 'app'
               },
               'hidden': false,
