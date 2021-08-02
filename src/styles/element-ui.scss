@@ -1,0 +1,87 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-table--enable-row-transition .el-table__body td{
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.el-table--small td, .el-table--small th{
+  padding: 8px 0;
+}
+
+/** 分页查询头部条件内边距 */
+.el-header{
+  padding: 20px 20px 10px 20px;
+}
+
+/** 分页页面大小button适应 */
+.el-pagination .el-pagination__sizes .el-input--mini .el-input__inner{
+  height: 22px;
+  line-height: 22px;
+}
+
+/** 分页查询头部条件内边距 */
+.search-form .el-form-item--small.el-form-item .el-form-item__label{
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.el-input-number .el-input__inner {
+  text-align: left;
+}
+
+/** 列表详情 */
+.detail-form .el-form-item--small.el-form-item .el-form-item__label{
+  font-size: 14px;
+  font-weight: 700;
+  color: #606266;
+}
